@@ -1,5 +1,10 @@
 from playwright.sync_api import Page, expect
-from utils.constants import HOME_PAGE
+from utils.constants import HOME_PAGE, SIGNUP_PAGE
+
+#Signup
+def go_to_signup(page: Page):
+    print("Given the user visits signup page")
+    page.goto(SIGNUP_PAGE)
 
 #Homepage 
 def go_to_homepage(page: Page):
