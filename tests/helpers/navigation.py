@@ -1,10 +1,12 @@
 from playwright.sync_api import Page, expect
 from utils.constants import HOME_PAGE
 
+#Homepage 
 def go_to_homepage(page: Page):
     print("Given the user visits homepage")
     page.goto(HOME_PAGE)
 
+#Navigation Bar (NavBar)
 def click_references_link(page: Page):
     print("And clicks on References")
     page.get_by_role("link", name="References", exact=True).click()

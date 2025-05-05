@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page
 from helpers.navigation import go_to_homepage, click_references_link, click_blog_link, click_curriculum_link, click_learn_link, click_plus_link, click_tools_link
 
 def test_homepage_navbar(page: Page):
@@ -9,9 +9,3 @@ def test_homepage_navbar(page: Page):
     click_curriculum_link(page)
     click_blog_link(page)
     click_tools_link(page)
-    
-
-    
-
-    
-
